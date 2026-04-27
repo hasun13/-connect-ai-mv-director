@@ -43,31 +43,13 @@ st.markdown("""
         background: #121212; /* Deep black background for maximum contrast */
         border: 2px solid #333333;
         border-radius: 12px;
-        padding: 22px;
-        margin-bottom: 18px;
+        padding: 25px;
+        margin-bottom: 30px; /* Increased spacing between prompts */
         color: #ffffff !important; /* Force white text */
-        font-size: 1.15rem; /* Larger font size */
-        line-height: 1.7;
+        font-size: 1.2rem; /* Even larger font size */
+        line-height: 1.8;
         box-shadow: 0 10px 30px rgba(0,0,0,0.6);
         word-break: keep-all;
-    }
-    .video-label { 
-        color: #FF2E63; /* Vibrant neon pink */
-        font-size: 0.9rem;
-        letter-spacing: 2px;
-        font-weight: 900; 
-        margin-bottom: 10px; 
-        display: block; 
-        text-transform: uppercase;
-    }
-    .image-label { 
-        color: #08D9D6; /* Vibrant cyan */
-        font-size: 0.9rem;
-        letter-spacing: 2px;
-        font-weight: 900; 
-        margin-bottom: 10px; 
-        display: block; 
-        text-transform: uppercase;
     }
     </style>
     """, unsafe_allow_html=True)
@@ -126,7 +108,6 @@ def main():
             for p in prompts['image_prompts']:
                 st.markdown(f"""
                 <div class="prompt-box">
-                    <span class="image-label">IMAGE PROMPT</span>
                     {p}
                 </div>
                 """, unsafe_allow_html=True)
@@ -136,7 +117,6 @@ def main():
             for p in prompts['video_prompts']:
                 st.markdown(f"""
                 <div class="prompt-box">
-                    <span class="video-label">VIDEO PROMPT</span>
                     {p}
                 </div>
                 """, unsafe_allow_html=True)
