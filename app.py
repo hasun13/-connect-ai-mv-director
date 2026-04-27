@@ -40,16 +40,35 @@ st.markdown("""
     h1, h2, h3 { color: #92FE9D !important; }
     .highlight-text { color: #00C9FF; font-weight: 800; }
     .prompt-box {
-        background: rgba(0, 0, 0, 0.3);
-        border: 1px solid rgba(255, 255, 255, 0.1);
-        border-radius: 10px;
-        padding: 15px;
-        margin-bottom: 10px;
-        font-family: 'Courier New', Courier, monospace;
-        font-size: 0.9em;
+        background: #121212; /* Deep black background for maximum contrast */
+        border: 2px solid #333333;
+        border-radius: 12px;
+        padding: 22px;
+        margin-bottom: 18px;
+        color: #ffffff !important; /* Force white text */
+        font-size: 1.15rem; /* Larger font size */
+        line-height: 1.7;
+        box-shadow: 0 10px 30px rgba(0,0,0,0.6);
+        word-break: keep-all;
     }
-    .video-label { color: #FF0080; font-weight: 700; margin-bottom: 5px; display: block; }
-    .image-label { color: #00C9FF; font-weight: 700; margin-bottom: 5px; display: block; }
+    .video-label { 
+        color: #FF2E63; /* Vibrant neon pink */
+        font-size: 0.9rem;
+        letter-spacing: 2px;
+        font-weight: 900; 
+        margin-bottom: 10px; 
+        display: block; 
+        text-transform: uppercase;
+    }
+    .image-label { 
+        color: #08D9D6; /* Vibrant cyan */
+        font-size: 0.9rem;
+        letter-spacing: 2px;
+        font-weight: 900; 
+        margin-bottom: 10px; 
+        display: block; 
+        text-transform: uppercase;
+    }
     </style>
     """, unsafe_allow_html=True)
 
