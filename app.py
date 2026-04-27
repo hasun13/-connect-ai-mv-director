@@ -24,31 +24,32 @@ st.markdown("""
     <style>
     @import url('https://fonts.googleapis.com/css2?family=Outfit:wght@300;600;800&display=swap');
     html, body, [class*="css"] { font-family: 'Outfit', sans-serif; }
-    .main { background: #050505; color: #ffffff; }
+    .main { background: #ffffff; color: #1a1a1a; }
     .stButton>button {
-        background: linear-gradient(90deg, #00C9FF, #92FE9D);
-        color: #000; border: none; border-radius: 30px;
+        background: linear-gradient(90deg, #0072ff, #00c6ff);
+        color: #ffffff; border: none; border-radius: 30px;
         padding: 15px 30px; font-weight: 800; width: 100%;
         transition: 0.4s;
     }
-    .stButton>button:hover { transform: scale(1.02); box-shadow: 0 0 20px #92FE9D; }
+    .stButton>button:hover { transform: scale(1.02); box-shadow: 0 5px 15px rgba(0,114,255,0.4); }
     .glass-card {
-        background: rgba(255, 255, 255, 0.03);
-        border: 1px solid rgba(255, 255, 255, 0.1);
+        background: #f8f9fa;
+        border: 1px solid #e9ecef;
         border-radius: 20px; padding: 25px; margin-bottom: 20px;
+        color: #1a1a1a;
     }
-    h1, h2, h3 { color: #92FE9D !important; }
-    .highlight-text { color: #00C9FF; font-weight: 800; }
+    h1, h2, h3 { color: #0072ff !important; }
+    .highlight-text { color: #0072ff; font-weight: 800; }
     .prompt-box {
-        background: #121212; /* Deep black background for maximum contrast */
-        border: 2px solid #333333;
+        background: #f1f3f5; /* Light gray background */
+        border: 2px solid #dee2e6;
         border-radius: 12px;
         padding: 25px;
-        margin-bottom: 30px; /* Increased spacing between prompts */
-        color: #ffffff !important; /* Force white text */
-        font-size: 1.2rem; /* Even larger font size */
+        margin-bottom: 30px; 
+        color: #1a1a1a !important; /* Dark text for readability */
+        font-size: 1.2rem;
         line-height: 1.8;
-        box-shadow: 0 10px 30px rgba(0,0,0,0.6);
+        box-shadow: 0 4px 10px rgba(0,0,0,0.05);
         word-break: keep-all;
     }
     </style>
